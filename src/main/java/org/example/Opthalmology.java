@@ -3,11 +3,11 @@ package org.example;
 public class Opthalmology extends Hospital {
     @Override
     public String medicalExam(Patient p){
-        if (p.getRightEye() <= 0.2){
-            return p.getName() + "さんは視力は0.2以下です";
+        if (p.getRightEye() < 0.2 || p.getLeftEye() < 0.2){
+            return p.getName() + "さんは視力は0.2未満です";
         }
         else {
-            return "視力0.2以下では無いです";
+            return "視力0.2以上です";
         }
     }
     @Override
