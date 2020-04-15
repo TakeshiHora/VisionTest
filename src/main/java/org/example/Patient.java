@@ -19,6 +19,7 @@ public class Patient {
         this.rightEye = rightEye;
         this.leftEye = leftEye;
     }
+    
     public String getName(){
         return this.name;
     }
@@ -27,19 +28,19 @@ public class Patient {
     }
     
     public double getHeight() {
-        return height;
+        return this.height;
     }
     
     public double getWeigtht() {
-        return weigtht;
+        return this.weigtht;
     }
     
     public double getRightEye() {
-        return rightEye;
+        return this.rightEye;
     }
     
     public double getLeftEye() {
-        return leftEye;
+        return this.leftEye;
     }
     
     @Override
