@@ -61,5 +61,12 @@ public class OpthalmologyTest {
         Opthalmology doctor = new Opthalmology();
         assertEquals("マイナス値は測定出来ません", doctor.medicalExam(patient));
     }
+    @Test
+    public void doubleMinusMedicalExamTest() {
+        Patient patient = new Patient("裕司", 19601001,
+                165.5,80.0, -1.5, -0.5);
+        Opthalmology doctor = new Opthalmology();
+        assertEquals("マイナス値は測定出来ません", doctor.medicalExam(patient));
+    }
     
 }
